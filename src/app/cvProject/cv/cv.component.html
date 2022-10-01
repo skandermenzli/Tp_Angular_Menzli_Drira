@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-4">
+        <app-list-cv (selectedpersonne)="selectpersonne($event)" [personnes]= "personnes"></app-list-cv>
+
+        <button class="btn btn-primary" (click)="showform()">edit</button>
+    </div>
+
+    <div class="col-md-5">
+        <app-detail-cv [personne]="selectedpersonne"></app-detail-cv>
+    </div>
+
+    
+    <div *ngIf="!formIsHidden" class="col-md-3" >
+        <app-form-cv [personne]="selectedpersonne"></app-form-cv>
+    </div>
+
+</div>

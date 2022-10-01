@@ -1,0 +1,21 @@
+
+<form class="row g-3">
+    
+    <div class="col-12">
+      <label for="inputname" class="form-label">name</label>
+      <input type="text" class="form-control" name="personne.name" [(ngModel)]="personne.name" value={{personne.name}}>
+    </div>
+    <div class="col-12">
+        <label for="inputfirstname" class="form-label">firstname</label>
+        <input type="text" class="form-control" name="personne.firstname" [(ngModel)]="personne.firstname" value={{personne.firstname}} >
+      </div>
+      <div class="col-12">
+        <label for="inputjob" class="form-label">job</label>
+        <input type="text" class="form-control" name="job" value={{personne.job}} [(ngModel)]="personne.job" >
+      </div>
+      <div class="col-12">
+        <label for="inputimage" class="form-label">image</label>
+        <input type="text" class="form-control" name="path" value={{personne.path}} [(ngModel)]="personne.path">
+      </div>
+
+  </form>

@@ -3,14 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FirstComponentComponent } from './first-component/first-component.component';
+import { CvComponent } from './cvProject/cv/cv.component';
+import { ListCvComponent } from './cvProject/list-cv/list-cv.component';
+import { ItemCvComponent } from './cvProject/item-cv/item-cv.component';
+import { DetailCvComponent } from './cvProject/detail-cv/detail-cv.component';
+import { FormCvComponent } from './cvProject/form-cv/form-cv.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstComponentComponent,
+    CvComponent,
+    ListCvComponent,
+    ItemCvComponent,
+    DetailCvComponent,
+    FormCvComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
