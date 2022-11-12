@@ -16,6 +16,9 @@ import { DefaultImagePipe } from './pipes/default-image.pipe';
 import { EmbaucheComponent } from './cvProject/embauche/embauche.component';
 
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,9 @@ import { EmbaucheComponent } from './cvProject/embauche/embauche.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

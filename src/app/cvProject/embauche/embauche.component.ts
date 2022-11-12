@@ -17,4 +17,9 @@ export class EmbaucheComponent implements OnInit {
     this.personnes = this.embaucheSerivce.getPersonneEmbaucher()
   }
 
+  debaucher(personne:Personne){
+    this.embaucheSerivce.debaucher(personne)
+    
+  }
+
 }

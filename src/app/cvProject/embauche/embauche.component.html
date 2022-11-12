@@ -2,6 +2,7 @@
 <ul class="list-group" *ngIf="personnes">
     <li *ngFor="let personne of personnes"  class="list-group-item">
         <img src="assets/images/{{personne.path|defaultImage}}" alt="euler" srcset="" class="rounded-circle" width="100px"> {{personne.firstname}} {{personne.name}} 
+        <button type="button" class="btn btn-danger" (click)="debaucher(personne)">debaucher</button>
     </li>
 </ul>
 
