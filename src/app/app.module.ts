@@ -14,6 +14,8 @@ import { MiniWordComponent } from './mini-word/mini-word.component';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { DefaultImagePipe } from './pipes/default-image.pipe';
 import { EmbaucheComponent } from './cvProject/embauche/embauche.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ToastrModule} from "ngx-toastr";
 
 
 
@@ -31,14 +33,15 @@ import { EmbaucheComponent } from './cvProject/embauche/embauche.component';
     MiniWordComponent,
     RainbowDirective,
     DefaultImagePipe,
-    EmbaucheComponent
+    EmbaucheComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    
-   
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
