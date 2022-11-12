@@ -6,7 +6,7 @@
     </div>
 
     <div class="col-md-5">
-        <app-detail-cv [personne]="selectedpersonne"></app-detail-cv>
+        <app-detail-cv [personne]="selectedpersonne" *ngIf="selectedpersonne"></app-detail-cv>
     </div>
 
     
@@ -14,4 +14,11 @@
         <app-form-cv [personne]="selectedpersonne"></app-form-cv>
     </div>
 
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <app-embauche></app-embauche>
+    </div>
 </div>

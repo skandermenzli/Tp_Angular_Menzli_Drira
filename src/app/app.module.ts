@@ -10,6 +10,11 @@ import { ItemCvComponent } from './cvProject/item-cv/item-cv.component';
 import { DetailCvComponent } from './cvProject/detail-cv/detail-cv.component';
 import { FormCvComponent } from './cvProject/form-cv/form-cv.component';
 import { FormsModule } from '@angular/forms';
+import { MiniWordComponent } from './mini-word/mini-word.component';
+import { RainbowDirective } from './directives/rainbow.directive';
+import { DefaultImagePipe } from './pipes/default-image.pipe';
+import { EmbaucheComponent } from './cvProject/embauche/embauche.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +24,11 @@ import { FormsModule } from '@angular/forms';
     ListCvComponent,
     ItemCvComponent,
     DetailCvComponent,
-    FormCvComponent
+    FormCvComponent,
+    MiniWordComponent,
+    RainbowDirective,
+    DefaultImagePipe,
+    EmbaucheComponent
   ],
   imports: [
     BrowserModule,

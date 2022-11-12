@@ -1,0 +1,35 @@
+
+<p
+[ngStyle]="{
+  color: color,
+  fontSize: size + 'px',
+  fontFamily: font
+}"
+>Test </p>
+
+<div class="row">
+    <div class="col-3">
+      <label for="couleur">Color</label>
+     <input id="couleur" type="color" [(ngModel)]="color" class="form-control">
+    </div>
+    <div class="col-3">
+        <label for="Taille">Taille</label>
+        <input id="Taille" type="number" [(ngModel)]="size" class="form-control">
+    </div>
+
+    <div class="col-3">
+        <label for="Font">Font</label>
+<select class="form-control" id="Font" [(ngModel)]="font">
+<option value="verdana">Verdana</option>
+<option value="arial">Arial</option>
+<option value="garamond">Garamond</option>
+<option value="Times New Roman">Times New Roman</option>
+</select>
+    </div>
+
+
+</div>
+
+
+
+<input type="text" class="form-control" appRainbow>
