@@ -16,6 +16,8 @@ import { DefaultImagePipe } from './pipes/default-image.pipe';
 import { EmbaucheComponent } from './cvProject/embauche/embauche.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToastrModule} from "ngx-toastr";
+import {ROUTING} from "./app.routing";
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -34,14 +36,15 @@ import {ToastrModule} from "ngx-toastr";
     RainbowDirective,
     DefaultImagePipe,
     EmbaucheComponent,
-
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    ROUTING,
   ],
   providers: [],
   bootstrap: [AppComponent]
