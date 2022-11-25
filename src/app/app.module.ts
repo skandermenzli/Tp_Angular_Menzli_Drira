@@ -20,6 +20,8 @@ import {ROUTING} from "./app.routing";
 import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import { DetailComponent } from './cvProject/detail/detail.component';
+import { AddCvComponent } from './cvProject/add-cv/add-cv.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -42,6 +44,8 @@ import { DetailComponent } from './cvProject/detail/detail.component';
     HeaderComponent,
     RouterSimulatorComponent,
     DetailComponent,
+    AddCvComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
