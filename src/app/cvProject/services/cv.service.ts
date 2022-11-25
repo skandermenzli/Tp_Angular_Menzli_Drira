@@ -19,4 +19,11 @@ export class CvService {
   getFPersonnes(): Personne[] {
     return this.personnes;
   }
+
+  getFPersonneById(id:number) {
+    
+    return this.personnes.find(
+      (personne) => personne.id == id
+    );
+  }
 }

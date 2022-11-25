@@ -18,6 +18,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ToastrModule} from "ngx-toastr";
 import {ROUTING} from "./app.routing";
 import { HeaderComponent } from './header/header.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { DetailComponent } from './cvProject/detail/detail.component';
+
 
 
 
@@ -37,6 +40,8 @@ import { HeaderComponent } from './header/header.component';
     DefaultImagePipe,
     EmbaucheComponent,
     HeaderComponent,
+    RouterSimulatorComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,
