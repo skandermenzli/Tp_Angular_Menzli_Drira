@@ -22,6 +22,7 @@ import { RouterSimulatorComponent } from './router-simulator/router-simulator.co
 import { DetailComponent } from './cvProject/detail/detail.component';
 import { AddCvComponent } from './cvProject/add-cv/add-cv.component';
 import { LoginComponent } from './login/login.component';
+import { ObservableComponent } from './observable/observable.component';
 
 
 
@@ -46,6 +47,7 @@ import { LoginComponent } from './login/login.component';
     DetailComponent,
     AddCvComponent,
     LoginComponent,
+    ObservableComponent,
   ],
   imports: [
     BrowserModule,
