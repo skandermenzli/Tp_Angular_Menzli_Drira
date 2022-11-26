@@ -1,0 +1,14 @@
+<form #loginForm="ngForm">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input id="email" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" type="email" class="form-control"  aria-describedby="emailHelp" ngModel name="email" #email="ngModel">
+      <div class="alert alert-danger" *ngIf="email.invalid && email.dirty">email must be of form "cc@aaa.tt"</div>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input id="password" required minlength="4" type="password" class="form-control" ngModel name="password" >
+      
+    </div>
+    
+    <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">Submit</button>
+  </form>

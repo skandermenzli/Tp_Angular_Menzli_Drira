@@ -33,4 +33,9 @@ export class CvService {
       this.personnes = this.personnes.filter((p)=>(p.id!=id))
 
   }
+
+  addPersonne(personne:Personne):void{
+    personne.id = this.personnes[this.personnes.length-1].id+1
+    this.personnes.push(personne)
+  }
 }
