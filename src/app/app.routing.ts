@@ -6,7 +6,6 @@ import { MiniWordComponent } from './mini-word/mini-word.component';
 const APP_ROUTING: Routes = [
   { path: 'cv/:id', component: DetailComponent },
   { path: 'cv', component: CvComponent },
-  
   { path: 'word', component: MiniWordComponent }
 ];
 

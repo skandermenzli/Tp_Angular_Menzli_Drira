@@ -20,19 +20,22 @@ export class DetailComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(
       (params) => {
-        console.log(params);
-        
-        /*this.cvService.getFPersonneById(params['id']).subscribe(
-          (personne: Personne) => this.personne = personne,
-          (erreur: any) => this.router.navigate([''])
-        );*/
+        console.log("params : " ,params['id']);
+
+        // @ts-ignore
+        this.personne = this.cvService.getFPersonneById(params['id'])
       }
     );
   }
 
 
   deletePersonne() {
-    
+        this.activatedRoute.params.subscribe(
+          (params) => {
+            this.cvService.delete(params['id']);
+          }
+        );
+        this.router.navigate(['cv'])
   }
 
 }
